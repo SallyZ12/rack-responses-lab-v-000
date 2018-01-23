@@ -2,9 +2,8 @@ class Application
   def call (env)
     resp = Rack::Response.new
 
-    # t = Time.now
+    t = Time.now
 
-    t= 6
 
     if t.to_i >= 0 && t.to_i <=12
       resp.write "Good Morning"
