@@ -3,7 +3,7 @@ class Application
     resp = Rack::Response.new
 
     t = Time.now
-    resp.write "#{t}\n"
+    resp.write "#{t.strftime("%H:%M")}\n"
 
 
     if t.to_i <= 12
