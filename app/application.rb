@@ -6,10 +6,10 @@ class Application
     resp.write "#{t.hour}\n"
 
 
-    if t.hour >= 12
-      resp.write "Good Afternoon"
-    else
+    if t.hour <= 12
       resp.write "Good Morning"
+    else
+      resp.write "Good Afternoon"
     end
 
     resp.finish
