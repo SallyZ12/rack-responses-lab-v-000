@@ -5,10 +5,10 @@ class Application
     t = Time.now
 
 
-    if t.to_i >= 0 && t.to_i <=12
-      resp.write "Good Morning"
-    else
+    if t.to_i > 12
       resp.write "Good Afternoon"
+    else
+      resp.write "Good Morning"
     end
 
     resp.finish
